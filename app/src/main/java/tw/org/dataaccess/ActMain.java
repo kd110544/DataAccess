@@ -16,7 +16,13 @@ public class ActMain extends AppCompatActivity {
             startActivity(intent);
         }
     };
-    private View.OnClickListener btnFile_Click;
+    private View.OnClickListener btnFile_Click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(ActMain.this, ActFile.class);
+            startActivity(intent);
+        }
+    };
     private View.OnClickListener btnSqlite_Click;
 
     @Override
